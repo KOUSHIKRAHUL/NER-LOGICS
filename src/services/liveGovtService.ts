@@ -4,7 +4,7 @@
  * Provides Mode Management (LIVE vs SIMULATION) and subscription
  */
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:3001').replace(/\/$/, '') + '/api/live';
+const API_BASE = '/api/live';
 
 export type DataMode = 'LIVE' | 'SIMULATION';
 

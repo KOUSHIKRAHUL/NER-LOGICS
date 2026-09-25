@@ -1,6 +1,6 @@
 import type { Incident, WeatherRisk } from '../data/nerGisData';
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:3001').replace(/\/$/, '') + '/api';
+const API_BASE = '/api';
 
 export interface StateRainfall {
   state: string;
