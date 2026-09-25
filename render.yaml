@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: ner-logix-backend
+    name: ner-logix
     env: node
     plan: free
-    buildCommand: npm install --include=dev
+    buildCommand: npm install && npm run build
     startCommand: node server/server.js
     envVars:
       - key: NODE_ENV
